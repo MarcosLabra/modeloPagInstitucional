@@ -57,11 +57,41 @@ header nav li {
   margin-left: 20px;
 }
 
+
 header nav li a {
   color: white;
   text-decoration: none;
   font-family: sans-serif;
   font-weight: bold;
+  transition: 0.2s;
+}
+
+header nav li a:hover {
+  color: #dd3491;
+  text-shadow: 3px 5px 5px #25252556;
+}
+
+header nav li a:active {
+  color: #a3286c;
+  text-shadow: none;
+}
+
+/* SECCION 1 */
+
+main #seccion1{
+  min-height: 100vh;
+}
+
+/* SECCION 2 */
+
+main #seccion2{
+  min-height: 100vh;
+  background-color:#f4f6f9;
+}
+
+/* SECCION 3 */
+main #seccion3{
+  min-height: 100vh;
 }
 
 /* FOOTER */
@@ -97,6 +127,14 @@ footer .rrss a {
 
 
 footer .rrss a img {
-  height:30px;
+  height: 30px;
   margin-left: 10px;
+  transition: 0.3s;
+}
+
+footer .rrss a img:hover {
+  transform: scale(1.2);
+}
+footer .rrss a img:active {
+  transform: scale(0.8);
 }
