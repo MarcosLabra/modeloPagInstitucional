@@ -1,63 +1,102 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* HEADER */
 
 header {
-    width: 100vw;
-    background-color: #00B4C7;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 30px;
+  width: 100vw;
+  background-color: #00B4C7;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  box-shadow: 0px 6px 20px 1px #46454538;
 }
 
 header .infoEscuela {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 header .infoEscuela img {
-    height: 80px;
+  height: 80px;
 }
 
 header .infoEscuela div {
-    margin-left: 20px;
-    color: white;
-    font-family: sans-serif;
+  margin-left: 20px;
+  color: white;
+  font-family: sans-serif;
 }
 
 header .infoEscuela div h1 {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 header .infoEscuela div h2 {
-    font-size: 18px;
-    margin-bottom: 5px;
-    font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 400;
 }
 
 header .infoEscuela div p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 header nav {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 header nav ul {
-    display: flex;
+  display: flex;
 }
 
 header nav li {
-    list-style: none;
-    margin-left: 20px;
+  list-style: none;
+  margin-left: 20px;
 }
+
 header nav li a {
-    color: white;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100vw;
+  background-color: #6c757d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+footer .desarrolladores h5 {
+  color: #95a6b6;
+  font-family: sans-serif;
+}
+
+footer .desarrolladores p {
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+footer .derechos {
+  color: white;
+  font-family: sans-serif;
+}
+
+footer .rrss a {
+  text-decoration: none;
+}
+
+
+footer .rrss a img {
+  height:30px;
+  margin-left: 10px;
 }
