@@ -4,12 +4,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* HEADER */
 
 header {
   position: fixed;
-  width: 100vw;
   height: 135px;
+  width: 100vw;
   background-color: #00B4C7;
   display: flex;
   flex-direction: column;
@@ -80,7 +84,8 @@ main {
 }
 
 /* SECCION 1 */
-main #seccion1 {
+main #sobreNosotros {
+  scroll-margin-top: 135px;
   min-height: 100vh;
   padding: 30px;
   background-image: url("../images/escuelaFondo.jpg");
@@ -93,33 +98,34 @@ main #seccion1 {
 
 
 
-main #seccion1 h3 {
+main #sobreNosotros h3 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 15px;
   font-size: 24px;
 }
 
-main #seccion1 p {
+main #sobreNosotros p {
   font-family: sans-serif;
   margin-bottom: 10px;
   font-size: 18px;
 }
 
 /* SECCION 2 */
-main #seccion2 {
+main #material {
+  scroll-margin-top: 135px;
   min-height: 80vh;
   padding: 30px;
   text-align: center;
   color: #02535c;
 }
 
-main #seccion2 h3 {
+main #material h3 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 15px;
   font-size: 24px;
 }
 
-main #seccion2 div {
+main #material div {
   margin-top: 50px;
   height: 300px;
   display: flex;
@@ -130,13 +136,13 @@ main #seccion2 div {
 }
 
 
-main #seccion2 div p {
+main #material div p {
   font-family: sans-serif;
   margin-bottom: 10px;
   font-size: 18px;
 }
 
-main #seccion2 div a button {
+main #material div a button {
   border: none;
   border-radius: 4px;
   background-color: #00B4C7;
@@ -146,16 +152,17 @@ main #seccion2 div a button {
 }
 
 
-main #seccion2 div a button:hover {
+main #material div a button:hover {
   transform: scale(1.1);
 }
 
-main #seccion2 div a button:active {
+main #material div a button:active {
   transform: scale(0.9);
 }
 
 /* SECCION 3 */
-main #seccion3 {
+main #contacto {
+  scroll-margin-top: 135px;
   min-height: 80vh;
   padding: 30px;
   background-color: #6fd3df;
@@ -164,13 +171,13 @@ main #seccion3 {
   text-shadow: 0px 0px 10px #25252560;
 }
 
-main #seccion3 h3 {
+main #contacto h3 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 15px;
   font-size: 24px;
 }
 
-main #seccion3 .contenedor {
+main #contacto .contenedor {
   margin-top: 50px;
   height: 450px;
   display: flex;
@@ -180,7 +187,7 @@ main #seccion3 .contenedor {
   font-size: 20px;
 }
 
-main #seccion3 div iframe{
+main #contacto div iframe {
   width: 100%;
   height: 250px;
   margin-bottom: 10px;
