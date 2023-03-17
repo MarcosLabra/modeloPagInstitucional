@@ -90,11 +90,13 @@ main #seccion1 {
 main #seccion1 h3 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 15px;
+  font-size: 24px;
 }
 
 main #seccion1 p {
   font-family: sans-serif;
   margin-bottom: 10px;
+  font-size: 20px;
 }
 
 /* SECCION 2 */
