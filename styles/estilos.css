@@ -60,7 +60,6 @@ header nav li {
   list-style: none;
 }
 
-
 header nav li a {
   color: white;
   text-decoration: none;
@@ -79,6 +78,7 @@ header nav li a:active {
   text-shadow: none;
 }
 
+/* MAIN */
 main {
   padding-top: 135px;
 }
@@ -240,4 +240,173 @@ footer .rrss a img:hover {
 
 footer .rrss a img:active {
   transform: scale(0.8);
+}
+
+/*MEDIA QUERIES*/
+
+
+
+@media (min-width:768px) {
+
+  /*HEADER*/
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav {
+    align-self: flex-end;
+  }
+
+  header nav li {
+    margin-left: 15px;
+  }
+
+  header .infoEscuela div h1 {
+    font-size: 24px;
+  }
+
+  header .infoEscuela div h2 {
+    font-size: 18px;
+  }
+
+  header .infoEscuela div p {
+    font-size: 16px;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+  }
+
+  /*MAIN*/
+
+  main #sobreNosotros,
+  main #material,
+  main #contacto {
+    min-height: fit-content;
+    padding: 50px 80px;
+  }
+
+  main #sobreNosotros h3,
+  main #material h3,
+  main #contacto h3 {
+    font-size: 30px;
+  }
+
+  main #material div {
+    padding: 50px;
+  }
+
+  main #material div a button {
+    font-size: 16px;
+  }
+
+  main #contacto .contenedor div {
+    margin-bottom: 50px;
+  }
+
+  /*FOOTER*/
+  footer {
+    flex-direction: row;
+    padding: 10px 30px;
+  }
+
+  footer .desarrolladores h5 {
+    text-align: start;
+    font-size: 14px;
+  }
+
+  footer .desarrolladores p {
+    font-size: 18px;
+  }
+
+  footer .derechos {
+    font-size: 18px
+  }
+
+  footer .rrss a img {
+    height: 40px;
+    margin-left: 15px;
+  }
+}
+
+@media (min-width:1200px) {
+
+  /*MAIN*/
+
+  main #sobreNosotros,
+  main #material,
+  main #contacto {
+    padding: 50px 150px;
+  }
+
+  main #contacto .contenedor {
+    flex-direction: row;
+    justify-content: space-around;
+    height: fit-content;
+    text-align: left;
+  }
+}
+
+@media (min-width:1600px) {
+
+  /*HEADER*/
+  header {
+    padding: 10px 200px;
+  }
+
+  header .infoEscuela div h1 {
+    font-size: 20px;
+  }
+
+  header .infoEscuela div h2 {
+    font-size: 16px;
+  }
+
+  header .infoEscuela div p {
+    font-size: 14px;
+  }
+
+  header nav li {
+    margin-left: 80px;
+  }
+
+  /*MAIN*/
+
+  main #sobreNosotros,
+  main #material,
+  main #contacto {
+    padding: 50px 350px;
+  }
+
+  main #sobreNosotros h3,
+  main #material h3,
+  main #contacto h3 {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+  main #sobreNosotros p,
+  main #material div p,
+  main #contacto .contenedor {
+    font-size: 16px;
+  }
+
+  /*FOOTER*/
+  footer {
+    padding: 0px 200px;
+  }
+
+  footer .rrss a img {
+    height: 30px;
+  }
+
+  footer .desarrolladores h5 {
+    font-size: 12px;
+  }
+
+  footer .desarrolladores p,
+  footer .derechos {
+    font-size: 16px;
+  }
 }
